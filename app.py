@@ -7,6 +7,6 @@ app = Flask(__name__)
 def index():
     return "Hello world"
 
-
+#gunicorn --worker-tmp-dir /dev/shm app:app
 if __name__ == "__main__":
     app.run(port=8080)
